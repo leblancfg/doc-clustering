@@ -33,11 +33,6 @@ def clustering(documents):
     en_stop = get_stop_words('en')
     p_stemmer = PorterStemmer()
 
-    # Set up word handling
-    tokenizer = RegexpTokenizer(r'\w+')
-    en_stop = get_stop_words('en')
-    p_stemmer = PorterStemmer()
-
     # See logging events
     logger = logging.getLogger('gensim.corpora.mmcorpus')
 
@@ -56,7 +51,7 @@ def clustering(documents):
         # Add tokens to list
         texts.append(stemmed_tokens)
 
-    dictionary = corpora.Dictionary(texts)
+    dictionary = gensim.corpora.Dictionary(texts)
     corpus = [dictionary.doc2bow(text) for text in texts]
 
     ldamodel = gensim.models.ldamodel.LdaModel(
@@ -71,11 +66,11 @@ if __name__ == "__main__":
     ref_idx = 3  # Input file column index for the reference number
     doc_idx = 7  # Input file column index for the ticket description
 
-    tickets = get_files('inputs/')[1]
+    tickets = get_files('input/example.csv')[1]
     model = clustering(tickets)
-
+    # print(model.print_topics(num_topics=2, num_words=4))
     m = open('model.txt', 'a')
-    m.write(model)
+    m.write(str(model.print_topics()))
     m.close()
 
 

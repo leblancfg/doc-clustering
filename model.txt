@@ -1,0 +1,1 @@
+[(0, u'0.021*eget + 0.021*tellu + 0.021*nequ + 0.021*nunc + 0.021*proin + 0.021*qui + 0.021*lectu + 0.021*arcu + 0.021*ac + 0.021*maecena'), (1, u'0.041*nunc + 0.041*tellu + 0.041*eget + 0.030*egesta + 0.030*maecena + 0.030*ac + 0.030*arcu + 0.030*lectu + 0.030*qui + 0.030*proin')]
