@@ -4,7 +4,7 @@
 # 2016
 
 """
-Document Clustering from Service Desk tickets
+Document Clustering for Service Desk tickets
 """
 
 from stop_words import get_stop_words
@@ -65,12 +65,12 @@ if __name__ == "__main__":
     # Set up environment-based variables
     ref_idx = 3  # Input file column index for the reference number
     doc_idx = 7  # Input file column index for the ticket description
-
+    
+    # Hard-code filename for github example
     tickets = get_files('input/example.csv')[1]
     model = clustering(tickets)
     # print(model.print_topics(num_topics=2, num_words=4))
+    
     m = open('model.txt', 'a')
     m.write(str(model.print_topics()))
     m.close()
-
-
