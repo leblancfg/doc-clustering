@@ -1,8 +1,8 @@
 # doc-clustering
-Simple use of Natural Language Processing (NLP) to help cluster Service Desk tickets into categories.
+Simple use of [Natural Language Processing](https://en.wikipedia.org/wiki/Natural_language_processing) (NLP) to help cluster Service Desk tickets into categories.
 
 ## How it works
-The script uses a process called Latent Dirichlet Allocation (LDA) to model the content of the documents into a mixture of topics. These topics are then tied to certain words, each with its probability distribution. We can then use that model to predict the topics contained in documents it has never seen before. In our particular implementation, we can then automatically suggest to our Service Desk users the most probable action to take, or boilerplate response to send back, based on the contents of the ticket.
+The script uses a process called [Latent Dirichlet Allocation](https://en.wikipedia.org/wiki/Latent_Dirichlet_allocation) (LDA) to model the content of the documents into a mixture of topics. These topics are then tied to certain words, each with its probability distribution. We can then use that model to predict the topics contained in documents it has never seen before. In our particular implementation, we can then automatically suggest to our Service Desk users the most probable action to take, or boilerplate response to send back, based on the contents of the ticket.
 
 ## Requirements
 The script was written with, and only tested on,
