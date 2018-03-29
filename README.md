@@ -20,6 +20,9 @@ Latent Dirichlet Allocation (LDA) with Python by Jordan Barber
 
 (https://rstudio-pubs-static.s3.amazonaws.com/79360_850b2a69980c4488b1db95987a24867a.html)
 
-## TODO
+## Next Steps
+This project is now archived. It has been useful to solve a one-time problem my team was facing. Unless this situation arises again, no additional work will be put in.
+
+Here are some suggestions for next steps to undertake:
 * Turn into more global package, for use in data pipeline
-* Could be made to also spit out detected language -> better boilerplate reply recommendations.
+* As incoming text was both french and english, could be made to also spit out detected language -> better boilerplate reply recommendations.
